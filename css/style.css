@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 :root {
-    --bg: #f4f7ff;
-    --card: #ffffff;
-    --text: #222;
-    --accent: #6c63ff;
+    --bg: #f4f7ff;    /* aliceblue / very light blue */
+    --card: #ffffff;   /* white */
+    --text: #222;      /* very dark gray / almost black */
+    --accent: #6c63ff; /* blueviolet / purple accent */
 }
 
 body.dark {
-    --bg: #0f172a;
-    --card: #1e293b;
-    --text: #e5e7eb;
-    --accent: #38bdf8;
+    --bg: #0f172a;    /* midnightblue / very dark blue */
+    --card: #1e293b;  /* darkslateblue / dark card */
+    --text: #e5e7eb;  /* lightgray / grayish text */
+    --accent: #38bdf8; /* deepskyblue / bright blue accent */
 }
 
 * {
@@ -22,7 +22,7 @@ body.dark {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(120deg, #6c63ff, #38bdf8);
+    background: linear-gradient(120deg, #6c63ff, #38bdf8); /* blueviolet to deepskyblue */
     min-height: 100vh;
     color: var(--text);
     transition: 0.4s ease;
@@ -36,17 +36,17 @@ body {
 
 /* Header */
 header {
-    background: var(--card);
+    background: var(--card);  /* white / darkslateblue in dark mode */
     border-radius: 14px;
     padding: 30px;
     margin-bottom: 30px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15); /* shadow black with transparency */
     text-align: center;
 }
 
 header h1 {
     font-size: 2.5rem;
-    color: var(--accent);
+    color: var(--accent); /* blueviolet / deepskyblue in dark mode */
 }
 
 header p {
@@ -55,22 +55,22 @@ header p {
 
 /* Blog Cards */
 .post {
-    background: var(--card);
+    background: var(--card);  /* white / dark card */
     padding: 25px;
     margin-bottom: 25px;
     border-radius: 14px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12); /* subtle black shadow */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .post:hover {
     transform: translateY(-6px);
-    box-shadow: 0 25px 40px rgba(0,0,0,0.2);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.2); /* stronger shadow on hover */
 }
 
 .post h2 a {
     text-decoration: none;
-    color: var(--accent);
+    color: var(--accent); /* blueviolet / deepskyblue */
 }
 
 .post p {
@@ -83,7 +83,7 @@ header p {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 18px;
-    background: var(--accent);
+    background: var(--accent); /* blueviolet / deepskyblue */
     color: white;
     border-radius: 25px;
     text-decoration: none;
@@ -99,20 +99,20 @@ header p {
     position: fixed;
     top: 20px;
     right: 20px;
-    background: var(--card);
+    background: var(--card); /* white / dark card */
     padding: 10px 14px;
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* shadow */
 }
 
 /* Blog Page */
 .blog-content {
-    background: var(--card);
+    background: var(--card); /* white / dark card */
     padding: 35px;
     border-radius: 14px;
     line-height: 1.8;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15); /* shadow */
 }
 
 /* Footer */
@@ -121,127 +121,3 @@ footer {
     margin-top: 40px;
     opacity: 0.7;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-:root {
-    --bg: #f4f7ff;
-    --card: #ffffff;
-    --text: #222;
-    --accent: #6c63ff;
-}
-
-body.dark {
-    --bg: #0f172a;
-    --card: #1e293b;
-    --text: #e5e7eb;
-    --accent: #38bdf8;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(120deg, #6c63ff, #38bdf8);
-    min-height: 100vh;
-    color: var(--text);
-    transition: 0.4s ease;
-}
-
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
-/* Header */
-header {
-    background: var(--card);
-    border-radius: 14px;
-    padding: 30px;
-    margin-bottom: 30px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    color: var(--accent);
-}
-
-header p {
-    opacity: 0.8;
-}
-
-/* Blog Cards */
-.post {
-    background: var(--card);
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 14px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.post:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 25px 40px rgba(0,0,0,0.2);
-}
-
-.post h2 a {
-    text-decoration: none;
-    color: var(--accent);
-}
-
-.post p {
-    margin-top: 10px;
-    line-height: 1.6;
-}
-
-/* Buttons */
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 18px;
-    background: var(--accent);
-    color: white;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    transform: scale(1.05);
-}
-
-/* Dark Mode Toggle */
-.toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: var(--card);
-    padding: 10px 14px;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-/* Blog Page */
-.blog-content {
-    background: var(--card);
-    padding: 35px;
-    border-radius: 14px;
-    line-height: 1.8;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 40px;
-    opacity: 0.7;
-}
-
