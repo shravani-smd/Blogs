@@ -3,17 +3,17 @@
 
 /* Color Variables */
 :root {
-    --bg: aliceblue;       /* was #f4f7ff */
-    --card: white;          /* was #ffffff */
-    --text: black;          /* was #222 */
-    --accent: blueviolet;   /* was #6c63ff */
+    --bg: aliceblue;           /* light background */
+    --card: white;             /* card background */
+    --text: black;             /* main text */
+    --accent: blueviolet;      /* accent color for headings/buttons */
 }
 
 body.dark {
-    --bg: midnightblue;     /* was #0f172a */
-    --card: darkslateblue;  /* was #1e293b */
-    --text: lightgray;      /* was #e5e7eb */
-    --accent: deepskyblue;  /* was #38bdf8 */
+    --bg: midnightblue;        /* dark background */
+    --card: darkslategray;     /* dark card */
+    --text: lightgray;         /* text in dark mode */
+    --accent: deepskyblue;     /* accent color in dark mode */
 }
 
 /* Reset & basic styles */
@@ -25,7 +25,7 @@ body.dark {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(120deg, var(--accent), deepskyblue); /* gradient simplified */
+    background: linear-gradient(120deg, var(--accent), deepskyblue);
     min-height: 100vh;
     color: var(--text);
     transition: 0.4s ease;
