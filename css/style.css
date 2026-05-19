@@ -121,3 +121,16 @@ footer {
     margin-top: 40px;
     opacity: 0.7;
 }
+
+.meta {
+    opacity: 0.7;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.soft-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--accent), transparent);
+    margin: 35px 0;
+}
