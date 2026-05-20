@@ -173,11 +173,36 @@
             <br>
             SaaSaysss
         </p>
-
+    <div class="like-section">
+        <button id="likeBtn">♡ Appreciate</button>
+        <p id="likeCount">Loading...</p>
+    </div>
+        
         <a class="btn" href="index.html">← Back Home</a>
     </div>
 </div>
 
 <script src="js/main.js"></script>
+    <script>
+const namespace = "saasaysss-blog";
+const key = "post5";
+
+const likeBtn = document.getElementById("likeBtn");
+const likeCount = document.getElementById("likeCount");
+
+fetch(`https://api.countapi.xyz/get/${namespace}/${key}`)
+.then(res => res.json())
+.then(data => {
+    likeCount.innerText = "♡ " + data.value + " appreciations";
+});
+
+likeBtn.addEventListener("click", () => {
+    fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
+    .then(res => res.json())
+    .then(data => {
+        likeCount.innerText = "♡ " + data.value + " appreciations";
+    });
+});
+</script>
 </body>
 </html>
