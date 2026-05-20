@@ -174,7 +174,7 @@
             SaaSaysss
         </p>
     <div class="like-section">
-        <button id="likeBtn">♡ Appreciate</button>
+        <button id="likeBtn">♡ resonated</button>
         <p id="likeCount">Loading...</p>
     </div>
         
@@ -193,14 +193,14 @@ const likeCount = document.getElementById("likeCount");
 fetch(`https://api.countapi.xyz/get/${namespace}/${key}`)
 .then(res => res.json())
 .then(data => {
-    likeCount.innerText = "♡ " + data.value + " appreciations";
+    likeCount.innerText = "♡ " + data.value + " resonated";
 });
 
 likeBtn.addEventListener("click", () => {
     fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
     .then(res => res.json())
     .then(data => {
-        likeCount.innerText = "♡ " + data.value + " appreciations";
+        likeCount.innerText = "♡ " + data.value + " resonated";
     });
 });
 </script>
